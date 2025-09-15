@@ -4,9 +4,7 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                dir('shopping-cart') {
-                    sh './mvnw clean test'
-                }
+                sh './mvnw clean test'
             }
         }
         stage('Image Build') {
